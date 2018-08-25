@@ -1,0 +1,16 @@
+/* body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzl2r_1SEqIkLHZijTJ0ElxvVFY9m0ifHUzp0w7PWxQbNpvI-a");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+h1 {
+    text-align: center;
+}
+
+#character-section, #defender-section {
+    border: 5px;
+    border-style: solid;
+    height: 100px;
+    width: 250px;
+}
