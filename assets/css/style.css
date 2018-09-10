@@ -1,16 +1,34 @@
-/* body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzl2r_1SEqIkLHZijTJ0ElxvVFY9m0ifHUzp0w7PWxQbNpvI-a");
+@import url('https://fonts.googleapis.com/css?family=Tangerine:700');
+
+body {
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzl2r_1SEqIkLHZijTJ0ElxvVFY9m0ifHUzp0w7PWxQbNpvI-a"); */
+    /* background-image: url("https://gamasutra.com/db_area/images/blog/211331/00%20refer.jpg"); */
+    /* background-image: url("https://janeaustensworld.files.wordpress.com/2010/06/pride-prejudice-157-copy.jpg?w=500"); */
+    /* background-image: url("https://austenprose.files.wordpress.com/2010/07/lyme_park2.jpg"); */
+    /* background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2014-12/19/10/enhanced/webdr07/original-17131-1419003508-16.jpg?downsize=715:*&output-format=auto&output-quality=auto"); */
     background-repeat: no-repeat;
     background-size: cover;
+    /* position: fixed;
+    bottom: 0; */
+    /* opacity: .5; */
+}
+
+/* #character-section, #defender-section {
+    border: 5px;
+    border-style: solid;
+    height: 300px;
+    width: 250px;
 } */
 
-h1 {
+h1, h4, p {
     text-align: center;
 }
 
-#character-section, #defender-section {
-    border: 5px;
-    border-style: solid;
-    height: 100px;
-    width: 250px;
+h1, h4 {
+    font-family: 'Tangerine', cursive;
+}
+
+img {
+    margin: 0 auto;
+    display: block;
 }
