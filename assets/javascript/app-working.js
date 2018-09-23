@@ -60,7 +60,7 @@ var fighterValue = "";
 function resetCharacters() {
     for (var i = 0; i < fighters.character.length; i++) {
         var characterStartPosition = $("<div>")
-        characterStartPosition.addClass("col-sm-3 fighter")
+        characterStartPosition.addClass("col-lg-3 fighter")
         characterStartPosition.attr("data-character",fighters.character[i].name);
 
         var name = $("<h4>").text(fighters.character[i].name)
@@ -101,12 +101,14 @@ function reset() {
     $("#enemies-section-title").hide()
     $("#attack").hide()
     $("#your-defender").hide()
+    $("#start-position").show()
 }
 
 //pick fighter and move rest of defenders to enemies section
 function pickFighter() {
     $("#your-character").show()
     $("#enemies-section-title").show()
+    $("#start-position").hide()
     fighter = $(this);
     fighterValue = $(this).attr("data-character");
 
