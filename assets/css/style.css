@@ -61,4 +61,25 @@ img {
     width: auto;
 }
 
+.enemy-image {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
 
+#enemies-section {
+    margin-top: 50px;
+    max-width: 400px;
+    margin: auto;
+    /* display: block; */
+    margin-bottom: 300px;
+}
+
+#start-position p, #defender-section p, #character-section p {
+    font-size: 28px;
+}
+
+#character-section p, #character-section h4 {
+    text-align: center;
+}

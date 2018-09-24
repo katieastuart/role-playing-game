@@ -111,6 +111,7 @@ function pickFighter() {
 $("#your-character").show()
 $("#enemies-section-title").show()
 $("#start-position").hide()
+$("#attack").show()
 fighter = $(this);
 fighterValue = $(this).attr("data-character");
 
@@ -146,7 +147,16 @@ function generateEnemiesDiv (enemies){
 $("#enemies-section").empty();
     $(enemies).each(function(k) {
         var enemiesDiv = $("<div>");
-        enemiesDiv.addClass("col-sm-4 enemy");
+
+        // change column width based on length of enemies array
+        if (enemies.length === 3) {
+            enemiesDiv.addClass("col-sm-4 enemy");
+        } else if (enemies.length === 2) {
+            enemiesDiv.addClass("col-sm-6 enemy");
+        } else if (enemies.length === 1) {
+            enemiesDiv.addClass("col-sm-12 enemy");
+        }
+        
         enemiesDiv.attr("data-enemy",enemies[k]);
 
         var name = $("<h4>").text(enemies[k])
@@ -156,7 +166,7 @@ $("#enemies-section").empty();
         $(fighters.character).each(function(m) {
         if (enemies[k] === fighters.character[m].name) {
             console.log(enemies[k] + ' ' + fighters.character[m].name)
-            img = $("<img>").attr("src", fighters.character[m].image);
+            img = $("<img class='enemy-image'>").attr("src", fighters.character[m].image);
             
             health = $("<p id='health-section'>").text(fighters.character[m].health)
         }
@@ -273,7 +283,7 @@ if (enemyHealth < 1 && fighterHealth > 0) {
         alert("You beat " + enemy + ". Pick another enemy to fight.")
         $("#enemies-section-title").show()
         $("#enemies-section").show()
-        $("#attack").hide()
+        // $("#attack").hide()
         $("#your-defender").hide()
     } else {
         alert("YOU WIN")
